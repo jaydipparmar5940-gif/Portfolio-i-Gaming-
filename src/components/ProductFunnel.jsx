@@ -182,12 +182,12 @@ const ProductFunnel = () => {
 
         {/* Stage selector — mobile: horizontal pills, desktop: funnel bars */}
         {isMobile ? (
-          <div style={{ display:'flex', gap:'8px', overflowX:'auto', paddingBottom:'8px', scrollbarWidth:'none', marginBottom:'1.5rem' }}>
+          <div style={{ display:'flex', gap:'8px', overflowX:'auto', paddingBottom:'10px', paddingTop:'2px', scrollbarWidth:'none', msOverflowStyle:'none', WebkitOverflowScrolling:'touch', marginBottom:'1.5rem', scrollSnapType:'x mandatory' }}>
             {funnelStages.map(stage => {
               const isActive = activeStage === stage.id;
               return (
                 <motion.button key={stage.id} onClick={() => setActiveStage(stage.id)} whileTap={{ scale:0.95 }}
-                  style={{ flexShrink:0, padding:'0.55rem 1rem', background: isActive ? stage.color : 'var(--glass-bg)', color: isActive ? '#000' : 'var(--text-primary)', border:`1.5px solid ${isActive ? stage.color : 'var(--glass-border)'}`, borderRadius:'30px', cursor:'pointer', fontWeight: isActive ? 700 : 500, fontSize:'0.8rem', whiteSpace:'nowrap', transition:'all 0.25s ease', fontFamily:'inherit' }}>
+                  style={{ flexShrink:0, scrollSnapAlign:'start', padding:'0.45rem 0.85rem', background: isActive ? stage.color : 'var(--glass-bg)', color: isActive ? '#000' : 'var(--text-primary)', border:`1.5px solid ${isActive ? stage.color : 'var(--glass-border)'}`, borderRadius:'30px', cursor:'pointer', fontWeight: isActive ? 700 : 500, fontSize:'0.75rem', whiteSpace:'nowrap', transition:'all 0.25s ease', fontFamily:'inherit' }}>
                   {stage.name}
                 </motion.button>
               );

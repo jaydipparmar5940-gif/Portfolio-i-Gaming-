@@ -58,7 +58,7 @@ const Navbar = () => {
           className="logo"
           onClick={(e) => handleNavClick(e, '#home')}
         >
-          Port<span className="gradient-text">folio</span>
+          Jaydip <span className="gradient-text">Parmar</span>
         </a>
 
         {/* Desktop Nav */}
