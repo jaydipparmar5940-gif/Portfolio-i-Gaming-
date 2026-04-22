@@ -87,8 +87,8 @@ const aiUseCases = [
 // ── Work History ──────────────────────────────────────────────────────────────
 const workHistory = [
   {
-    period: 'June 2025 – Present',
-    title: 'Associate Product Manager — iGaming',
+    period: 'April 2025 – Present',
+    title: 'Associate Product Manager — Casino',
     company: 'AIS Technolabs Pvt. Ltd.',
     sub: 'Casino Platforms · White-label & Turnkey · B2C · Ahmedabad, India',
     color: 'var(--accent-cyan)',
@@ -103,7 +103,7 @@ const workHistory = [
     ],
   },
   {
-    period: 'Dec 2023 – May 2025',
+    period: 'Dec 2023 – April 2025',
     title: 'IT Project Coordinator',
     company: 'SHAIP AI DATA (IND) Pvt. LLP.',
     sub: 'AI Data Platforms · Multilingual Speech · Biometric AI · Ahmedabad, India',
